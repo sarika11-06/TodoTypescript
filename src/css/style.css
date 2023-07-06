@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.header {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  color: #99a3b7;
+  font-style: italic;
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ffff;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://images4.alphacoders.com/114/1144182.jpg);
+  background-size: cover;
+}
+
+main {
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-flow: column nowrap;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+  background-color: rgb(228 228 228 / 15%);
+}
+
+section {
+  padding: 0.5rem;
+}
+
+.button {
+  background: unset;
+  cursor: pointer;
+  border: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.newItemEntry {
+  position: sticky;
+  top: 0;
+  margin-bottom: 1rem;
+}
+
+.newItemEntry__form {
+  display: flex;
+  gap: 0.25rem;
+  font-size: 1.5rem;
+}
+
+.newItemEntry__input {
+  width: 100%;
+  padding: 4px 16px;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: #fff;
+}
+
+::-webkit-input-placeholder {
+  /* color: rgba(255,255,255,0.6); */
+  color: #fff;
+}
+
+.newItemEntry__button {
+  background-color: transparent;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  padding: 0px 12px;
+  border-radius: 4px;
+  /* padding: 0.75em; */
+}
+
+.listContainer {
+  font-size: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  max-height: 790px;
+  overflow-x: hidden;
+}
+
+.listTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.listTitle__button {
+  background-color: transparent;
+  color: whitesmoke;
+  padding: 0.25em;
+}
+
+.listItems {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin: 10px auto;
+  background: transparent;
+  color: #000;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+}
+
+.item > input[type="checkbox"] {
+  text-align: center;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  cursor: pointer;
+}
+
+.item > input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+
+.item > label {
+  flex-grow: 1;
+  word-break: break-all;
+  font-size: 16px;
+}
+
+.item > button:hover,
+.item > button:focus {
+  color: red;
+}
+
+#noListMessage {
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 1rem;
+  }
+  .newItemEntry__form {
+    gap: 0.5rem;
+  }
+}
+
+/* 9BA4B5
+  EEEEEE
+  D8D8D8
+  E8E2E2
+  F5F5F5
+*/
