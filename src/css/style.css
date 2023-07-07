@@ -133,7 +133,7 @@ section {
   gap: 1em;
   margin: 10px auto;
   background: transparent;
-  color: #000;
+  color: #fff;
   padding: 8px 16px;
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 4px;
@@ -173,10 +173,3 @@ section {
     gap: 0.5rem;
   }
 }
-
-/* 9BA4B5
-  EEEEEE
-  D8D8D8
-  E8E2E2
-  F5F5F5
-*/
